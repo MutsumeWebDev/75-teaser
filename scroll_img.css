@@ -1,0 +1,55 @@
+.slider {
+    width:94%;
+    margin:0 auto;
+    margin-top: calc(4.5em);
+    padding-bottom: 30px;
+ }
+.slider img {
+    width:100%;
+    height:auto;
+
+}
+.slider .slick-slide {
+    margin:0 10px;
+}
+
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;
+    border-top: 2px solid #666;
+    border-right: 2px solid #666;
+    height: 15px;
+    width: 15px;
+}
+.slick-prev {/*戻る矢印の位置と形状*/
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+.slick-next {/*次へ矢印の位置と形状*/
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+.slick-dots {
+    text-align:center;
+	margin:20px 0 0 0;
+}
+.slick-dots li {
+    display:inline-block;
+	margin:0 5px;
+}
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+}
+.slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}

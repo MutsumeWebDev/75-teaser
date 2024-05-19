@@ -1,5 +1,5 @@
 $('.slider').slick({
-    // autoplay: true,//自動的に動き出すか。初期値はfalse。
+    autoplay: true,//自動的に動き出すか。初期値はfalse。
     infinite: true,//スライドをループさせるかどうか
     slidesToShow: 1,
     slidesToScroll: 1,

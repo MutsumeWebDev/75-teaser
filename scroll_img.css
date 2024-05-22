@@ -1,12 +1,12 @@
 .slider {
-    width:100%;
+    width:94%;
     margin:0 auto;
     margin-top: calc(4.5em);
     padding-bottom: 30px;
  }
 .slider img {
-    width: 100%;
-    margin: 0 auto;
+    width:100%;
+    height:auto;
 
 }
 .slider .slick-slide {
@@ -18,18 +18,17 @@
     top: 42%;
     cursor: pointer;/*マウスカーソルを指マークに*/
     outline: none;
-    border-top: 2px solid white;
-    border-right: 2px solid white;
-    box-shadow: 1px 1px 1px black;
+    border-top: 2px solid #666;
+    border-right: 2px solid #666;
     height: 15px;
     width: 15px;
 }
 .slick-prev {/*戻る矢印の位置と形状*/
-    left: 5%;
+    left: -1.5%;
     transform: rotate(-135deg);
 }
 .slick-next {/*次へ矢印の位置と形状*/
-    right: 5%;
+    right: -1.5%;
     transform: rotate(45deg);
 }
 

@@ -159,6 +159,7 @@ dd{
     display: flex;
     flex-wrap: nowrap;
 }
+
 .kyosan__box{
     max-width: 1000px;
     position: relative;

@@ -159,13 +159,6 @@ dd{
     display: flex;
     flex-wrap: nowrap;
 }
-.kyosan{
-    background-image: url(IMG_5584.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
-    z-index: 10;
-}
 .kyosan__box{
     max-width: 1000px;
     position: relative;

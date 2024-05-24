@@ -1,12 +1,18 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('NotoSansJP-Regular.otf') format('opentype');
+}
 html{
-    font-family: "Yu Gothic", "YuGothic",'Kiwi Maru', sans-serif;
+    font-family: "Yu Gothic", "YuGothic",'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 *{
     box-sizing: border-box;
 }
 main{
-    margin: 0;
+    margin: 0 auto;
+    max-width: 900px;
 }
 body {
     position: relative;
@@ -16,8 +22,12 @@ body {
     background-color: white;
 }
 section{
-    padding-left: 8%;
-    padding-right: 8%;
+    display: block;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+div{
+    display: block;
 }
 h1, h2, h3{
     display: block;
@@ -25,6 +35,7 @@ h1, h2, h3{
 p{
     line-height: 2em;
     letter-spacing: .05rem;
+    font-weight: 400;
 }
 a{
     display: block;
@@ -39,7 +50,7 @@ img{
     display: block;
 }
 dd{
-    line-height: 1.618em;
+    line-height: 2em;
     padding-left: 30px;
 }
 
@@ -65,17 +76,15 @@ dd{
     display: flex;
     width: 12em;
     padding: .3em;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: white;
-    border-right:solid 1px rgb(136, 201, 161);
-    border-bottom:solid 1px rgb(136, 201, 161);
     box-shadow: 5px 5px 15px 0 rgb(0 0 0 / 30%);
     z-index: 74;
 }
 .top__img{
-    height: 60px;
-    margin-right: .4em;
+    height: 55px;
+    margin-right: 10px;
 }
 .top__top{
     font-size: 1.6em;
@@ -123,42 +132,19 @@ dd{
 }
 .to__top{
     position: fixed;
-    right: 8vw;
-    bottom: 8vh;
-    padding: 5px 15px;
-    text-align: center;
-    font-size: .7em;
-    background-color: #fff;
-    border-radius: 35px;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 10);;
-    z-index: 74;
+    background-image: url(/images/icon-back.png);
+    right: 8px;
+    bottom: 8px;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    z-index: 1000000;
+    background-size: 40px 40px;
 }
 
 /*top*/
-.news{
-    display: -webkit-box;
-    display: flex;
-    flex-wrap: nowrap;
-    margin-bottom: 50px;
-}
-.news__ttl__box{
-    position: relative;
-    width: 20%;
-    border-right: solid 1px rgb(136, 201, 161);
-}
-.news__ttl{
-    position: absolute;
-    top: 0;
-    right: .5em;
-    font-size: 1.33em;
-    font-weight: 300;
-    color: rgb(136, 201, 161);
-    letter-spacing: .1em;
-}
-.news__list{
-    display: flex;
-    flex-wrap: nowrap;
-}
+
+
 
 .kyosan__box{
     max-width: 1000px;
@@ -167,13 +153,8 @@ dd{
     width: 90%;
     padding: 3rem 2rem;
     background: #fff;
-    background-image: url();
     box-shadow: 0 0 6px rgba(0,0,0,.2);
     z-index: 11;
-}
-.kyosan::before{
-    position: absolute;
-    top: -6.25rem;
 }
 .kyosan__ttl{
     display: block;
@@ -192,17 +173,26 @@ dd{
     background: rgb(136, 201, 161);
     margin: 2rem auto 2.5rem;
 }
+.kyosan__content{
+    margin: 0 auto;
+    padding: 5px 5px 30px;
+    width: 85%;
+}
 .kyosan__wrap{
     position: relative;
 }
-.kyosan__content{
-    padding: 5px 30px 30px;
-    z-index: 10;
+.mid__ttl{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: rgb(89, 118, 185);
+    border-bottom: solid 1px #bdbebe;
 }
 .kyosan__img{
-    width: 100%;
-    padding: 5px 20px;
-    z-index: 9;
+    margin: 5px 20px 30px;
 }
 
 .student{
@@ -227,25 +217,65 @@ dd{
 .student__wrap{
     display: flex;
     flex-wrap: wrap;
-    padding: 30px 20px 20px 30px;
+    padding: 10px 0 14px;
     border: solid 1px #bdbebe;
     box-shadow: 5px 5px rgb(136, 201, 161);
 }
-.box__img{
-    width: 50%;
-    padding: 20px auto 20px;
-    border-right: solid 1px rgb(136, 201, 161);
+.student__img{
+    width: 36vw;
+    margin-right: 15px;
 }
-.box__content{
-    width: 50%;
+
+.link__button__1{
+    position: absolute;
+    right: 0;
+    display: flex;
+    width: 10em;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 8px;
+    padding-left: .5em;
+    margin-top: 15px;
+    margin-bottom: 2em;
 }
-.link__button{
-    margin: .6rem auto;
-    padding: .6rem auto;
-    width: 8em;
+.link__button__1::before{
+    content: "";
+    position: absolute;
+    border-bottom: solid 1px rgb(136, 201, 161);
+    bottom: 0px;
+    right: 0px;
+    display: block;
+    -webkit-transition: .5s;
+    transition: .5s;
+    width: 100%;
+    height: 1px;
+}
+.link__button__1::after{
+    content: '';
+    background-image: url(/images/icon_Arrow.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 21px 5px;
+    display: block;
+    width: 21px;
+    height: 5px;
+    z-index: 10000;
+
+}
+.link__button__2{
+    display: block;
+    width: 17em;
+    margin: 10px auto 20px;
+    padding: .6em 0;
+    color: #fff;
+    border-radius: 1.5px;
+    background-color: rgb(87, 158, 215);
     text-align: center;
-    letter-spacing: .1em;
-    border-bottom: solid 1px rgb(87, 158, 215);
+    font-family: serif;
 }
 
 .contact__ttl{
@@ -269,7 +299,7 @@ dd{
     padding-top: 20px;
 }
 .address__ttl{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     padding-left: 1em;
     font-size: 1.33rem;
     font-weight: 300;
@@ -281,7 +311,6 @@ dd{
 
 /*kyosan.html*/
 .kyosan__page section{
-    max-width: 1000px;
     margin: 0 auto;
 }
 .detail__ttl{
@@ -289,7 +318,7 @@ dd{
     display: block;
     margin-top: 3em;
     text-align: center;
-    background-image: url(header_img.png);
+    background-image: url(/images/header_img.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -306,18 +335,33 @@ dd{
     color: white;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, 10);
 }
-
 .kyosan__page{
     margin-bottom: 100px;
 }
 .kyosan__top{
     height: 100px;
-    align-items: center;
+}
+.kyosan__top h3{
+    padding-top: calc(50px - .8em);
+    text-align: center;
+    color: rgb(87, 158, 215);
+    font-size: 1.6em;
+    font-weight: 500;
+}
+.kyosan__top h3::after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    width: 3em;
+    background: rgb(136, 201, 161);
+    margin: 2rem auto 2.5rem;
 }
 .warning{
-    margin: 30px 50px;
+    margin: 30px 8%;
     padding: 1em;
+    font-size: .8em;
     border: solid 2px #cc3328;
+    border-radius: 10px;
 }
 .section__ttl{
     margin-bottom: 30px;
@@ -331,8 +375,8 @@ dd{
 }
 .section__content{
     position: relative;
-    margin: 0 10px 30px;
-    padding: 0px 30px 30px 
+    margin: 0 0px 30px;
+    padding: 0px 6% 30px 
 }
 .section__content::before{
     content: '';
@@ -343,6 +387,30 @@ dd{
     height: .7px;
     background-color: rgb(136, 201, 161);
 }
+.kyosan__choice{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: .6em;
+    font-size: 1.3em;
+    color: rgb(89, 118, 185);
+    border-bottom: solid 2px #bdbebe;
+}
+.sponsor__ways{
+    padding-bottom: 1em;
+}
+.sponsor__info{
+    padding-bottom: 1em;
+}
+.kyosan__choice::after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 3em;
+    height: 2px;
+    background-color: rgb(87, 158, 215);
+}
 .section__content::after{
     content: '';
     position: absolute;
@@ -352,6 +420,15 @@ dd{
     height: 40%;
     background-color: rgb(136, 201, 161);
 }
+.kyosan__adress{
+    padding-top: 30px;
+}
+.kyosan__adress dd{
+    margin-top: 1em;
+    border-left: 1px solid rgb(116, 198, 190);
+}
+
+
 footer{
     background-color: #f5f5f5;
     margin-top: 30px;
@@ -390,7 +467,10 @@ footer{
 }
 .sns__icon{
     display: flex;
-    margin: 0 auto;
+    margin: 30px auto 0px;
+    grid-template-columns: 4vw 4vw;
+    grid-gap: 20px;
+    justify-content: center;
 }
 .sns__logo{
     width: 30px;

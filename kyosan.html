@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/hamburger.css">
 </head>
 <body>
-    <header>
+    <header id="top">
         <a class="" href="index.html">
             <div class="top">
                 <img class="top__img" src="favicon.png" alt="むつめ祭のアイコン">
@@ -22,7 +22,10 @@
         <div class="openbtn"><span></span><span></span><span></span></div>
         <nav class="nav" id="menubar__top">
             <!-- jsで書き足されます -->
-        </nav>        
+        </nav>
+        <a href="#top">
+            <div class="to__top"></div>
+        </a>  
     </header>
     <main class="kyosan__page">
         <div class="detail__ttl">
@@ -34,7 +37,7 @@
         <div class="warning">
             <p>フリーマーケットへの参加をご希望の方は、以下のフォームよりお問い合わせください。</p>
             <div class="link__button__2">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeIJiIN-fMt559U58OseBsH9DfXMlkEsf62DyIxjUb8GeXNVA/viewform?usp=sf_link">フリーマーケット問い合わせフォーム</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeIJiIN-fMt559U58OseBsH9DfXMlkEsf62DyIxjUb8GeXNVA/viewform?usp=sf_link">フリーマーケット専用フォーム</a>
             </div>
         </div>
         <section id="introduction">
@@ -48,7 +51,8 @@
                     昨年度は、パフォーマンス、模擬店、イルミネーションなど様々なイベントが催され、2万人を超える方々にお越しいただきました。
                     今年度も、学生も来場者も、すべての参加者が参加して良かったと思える学園祭となるよう、また
                     よりたくさんの方にご来場いただき、老若男女問わず楽しんでいただけるよう、委員一同準備を進めております。<br>
-                    そして、むつめ祭が皆様から頂いたご協賛は、むつめ祭の発展のため、温かいご支援のほど、どうぞよろしくお願いいたします。
+                    そして、むつめ祭開催への大きな力となっているのは、皆さまからいただいたあたたかいご支援です。むつめ祭の発展のため、ご協力いただければ幸いです。
+                    何卒よろしくお願いいたします。
                 </p>
             </div>
         </section>
@@ -60,7 +64,7 @@
                     現在、むつめ祭では、協賛という形で企業の皆さまからの支援を募っております。<br>
                     協賛をご検討いただける際には下記のフォームへのご回答をお願いします。協賛に関する詳細な資料をご用意しております。
                 </p>
-                <h4>協賛形態</h4>
+                <h4 class="kyosan__choice">協賛形態</h4>
                     <dl class="ul__indent">
                         <dt class="sponsor__ways">広告協賛</dt>
                             <dd class="sponsor__info">パンフレットや公式サイトへ広告を掲載いたします。</dd>
@@ -70,7 +74,7 @@
                         <dt class="sponsor__ways">資金協賛</dt>
                             <dd class="sponsor__info">むつめ祭運営にかかわる資金のご提供をいただきます。</dd>
                         <dt class="sponsor__ways">ブース協賛</dt>
-                            <dd class="sponsor__info">むつめ祭における特設ブースにて出展することが可能です。</dd>
+                            <dd class="sponsor__info">むつめ祭における特設ブースにて出展していただくことができます。</dd>
                             <img src="" art="">
                     </dl>
             </div>
@@ -88,7 +92,7 @@
             <h4 class="section__ttl">お問い合わせ</h4>
             <div class="section__content">
                 <p>
-                    協賛をご検討いただける場合は以下のフォームへ回答をお願いします。詳細な資料をお送りいたします。
+                    協賛をご検討いただける場合、または賛助にご興味をお持ちいただけた場合は、以下のフォームへ回答をお願いします。詳細な資料をお送りいたします。 
                 </p>
                 <div class="link__button__2">
                     <a href="https://forms.gle/Tx8F59G6425WDVni7">ご回答はこちら</a>
@@ -96,10 +100,13 @@
                 <p>
                     その他お問い合せやご要望などがございましたら、以下の連絡先へお問い合せください。
                 </p>
-                <dl> 
+                <dl class="kyosan__adress"> 
                     <dt>埼玉大学 第75回むつめ祭実行委員会 協賛部署</dt>
-                    <dd>〒338-8570 埼玉県さいたま市桜区下大久保255 埼玉大学内</dd>
-                    <dd>Email:kyosan@mutsume.com</dd>
+                    <dd>
+                        〒338-8570<br>埼玉県さいたま市桜区下大久保255 埼玉大学内<br>
+                        Email: kyosan[at]mutsume.com<br>
+                        ([at]を@に変更してください。)
+                    </dd>
                 </dl>
 
             </div>

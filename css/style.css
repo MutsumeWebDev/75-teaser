@@ -311,7 +311,7 @@ dd{
     display: block;
     margin-top: 3em;
     text-align: center;
-    background-image: url(header_img.png);
+    background-image: url(/images/header_img.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;

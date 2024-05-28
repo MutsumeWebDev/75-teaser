@@ -143,6 +143,13 @@ dd{
 }
 
 /*top*/
+.news__ttl{
+    margin-bottom: .7em;
+    padding-bottom: .3em;
+    font-size: 1.6em;
+    color: rgb(136, 201, 161);
+    border-bottom: solid 1px rgb(136, 201, 161)
+}
 .news__list>li{
     display: -webkit-box;
     display: -ms-flexbox;

@@ -49,11 +49,13 @@
     
     .detail__list__top{
         position:fixed;
+        display: block;
         z-index: 900;
         top:0;
-        right: -120%;
-        width:100%;
+        right: -100%;
+        width: auto;
         height: 100vh;
+        padding: 5% 10%;
         background-color: rgb(136, 201, 161);
         transition: all 0.6s;
     }
@@ -76,7 +78,6 @@
         color: #333;
         text-decoration: none;
         padding:10px;
-        display: block;
         text-transform: uppercase;
         letter-spacing: 0.1em;
         font-weight: bold;

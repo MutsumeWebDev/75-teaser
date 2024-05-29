@@ -11,7 +11,5 @@ const detail__list__bottom = '<ul class="detail__list__bottom">\
 <!-- <li class="lists__bottom"><a href="">テーマ</a></li>\
 <li class="lists__last__bottom"><a href="">公式テーマソング</a></li> --></ul>';
 
-$(document).ready( function(){
-    $('#menubar__top')[0].innerHTML = detail__list__top;
-    $('#menubar__bottom')[0].innerHTML = detail__list__bottom;
-});
+document.getElementById("menubar__top").innerHTML = detail__list__top;
+document.getElementById("menubar__bottom").innerHTML = detail__list__bottom;

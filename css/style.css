@@ -178,9 +178,6 @@ dd{
     padding-bottom: 30px;
     width: 60%;
 }
-.icon{
-    width: 30px;
-}
 .to__top{
     position: fixed;
     background-image: url(/images/icon-back.png);
@@ -218,7 +215,6 @@ dd{
 }
 
 .kyosan__box{
-    max-width: 1000px;
     position: relative;
     margin: 6.25rem auto 3rem;
     width: 90%;
@@ -308,7 +304,7 @@ dd{
     position: absolute;
     top: calc(50% - 1px);
     left: -2em;
-    width: calc(30px + 2em);
+    width: calc(1.6em * 2);
     height: 2px;
     background-color: #bdbebe;
 }
@@ -449,7 +445,7 @@ dd{
 
 footer{
     background-color: #f5f5f5;
-    margin-top: 30px;
+    margin-top: 50px;
     padding-bottom: 30px;
 }
 .detail__list__bottom{
@@ -487,20 +483,38 @@ footer{
     display: flex;
     margin: 30px auto 0px;
     grid-template-columns: 4vw 4vw;
-    grid-gap: 20px;
+    grid-gap: 5vw;
     justify-content: center;
 }
 .sns__logo{
     width: 30px;
 }
 
-@media screen and (max-width:414px) {
+@media screen and (max-width:430px) {
     body {
         font-size:3.5vw;
     }
-    h1{font-size: 5.0vw;}
+    h1{
+        font-size: 5.0vw;
+    }
+
+    .kyosan__box{
+        padding: 2.5rem 1rem
+    }
+    .kyosan__ttl::after{
+        margin: 1rem auto 1.25rem;
+    }
+    .kyosan__img{
+        margin: 5px 5px 20px;
+    }
+    .kyosan__content{
+        width: 100%;
+    }
 }
 @media screen and (max-width:767px){
+    .top__img{
+        height: 9vh;
+    }
     .news__list>li{
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -522,7 +536,31 @@ footer{
         font-size: 14px;
     }
 }
-@media print, screen and (min-width: 768px) {   
+@media screen and (max-width:540px) {
+    .picture{
+        width: 100%;
+    }
+    .student{
+        margin: 0 auto 100px;
+        width: 90%;
+    }
+    .student__wrap{
+        flex-wrap: wrap;
+        padding-top: 0px;
+    }
+    .student__img{
+        width: 100%;
+        margin: 0;
+    }
+    .student__content{
+        padding: 0 20px 20px
+    }
+    .mid__ttl{
+        width: 90%;
+    }
+    
+}
+@media screen and (min-width: 768px) {   
     .marker{
         font-size: 11px;
         line-height: 1.3;

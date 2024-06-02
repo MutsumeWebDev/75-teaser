@@ -31,11 +31,11 @@ div{
 }
 h1, h2, h3{
     display: block;
+    letter-spacing: .05em;
 }
 p{
     line-height: 2em;
     letter-spacing: .05rem;
-    font-weight: 400;
 }
 a{
     display: block;
@@ -121,30 +121,30 @@ dd{
 }
 
 /*header*/
+header{
+    border-top: 2px solid rgb(136, 201, 161);
+}
 .top{
-    position: fixed;
-    top: 0;
     display: flex;
-    width: 12em;
-    padding: .3em;
+    margin: 0 auto;
+    padding: 90px 0 37px;
+    width: 224px;
     justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    box-shadow: 5px 5px 15px 0 rgb(0 0 0 / 30%);
+    color: rgb(89, 118, 185);
+    font-family: serif;
     z-index: 74;
 }
 .top__img{
-    height: 55px;
-    margin-right: 10px;
+    height: 57px;
+    margin-right: 7px;
 }
 .top__top{
-    font-size: 1.6em;
-    font-family: serif;
+    font-size: 35px;
+    text-align: center;
     border-bottom: solid 1px rgb(136, 201, 161);
 }
 .top__sub{
-    font-size: .7em;
-    font-family: serif;
+    font-size: 17px;
     text-align: center;
 }
 .detail__list__top{
@@ -512,9 +512,6 @@ footer{
     }
 }
 @media screen and (max-width:767px){
-    .top__img{
-        height: 9vh;
-    }
     .news__list>li{
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;

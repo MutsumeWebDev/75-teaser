@@ -1,4 +1,5 @@
 const detail__list__top = '<ul class="detail__list__top">\
+<li class="lists__bottom"><a href="/index.html">トップ</a></li>\
 <li class="lists"><a href="/kyosan.html">協賛のお願い</a></li>\
 <li class="lists__last"><a href="/student.html">参加団体へ</a></li>\
 <!-- <li class="lists"><a href="">テーマ発表</a></li>\

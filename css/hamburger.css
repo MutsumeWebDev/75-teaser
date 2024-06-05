@@ -1,4 +1,25 @@
+/* ワイド画面でのmenubarの画像を表示させなくする */
+#top__mutsume{
+    display: none;
+}
+.detail__top{
+    display: none;
+}
+
 @media  screen and (max-width: 767px) {
+    #top__mutsume{
+        display: block;
+    }
+    .detail__top{
+        display: block;
+    }
+    #top__mutsume .top{
+        color: white;
+    }
+    #top__mutsume .top__top{
+        border-color: gray;
+    }
+
     .openbtn{
         position: fixed;
         width: 57px;

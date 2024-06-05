@@ -1,5 +1,9 @@
 const detail__list__top = '<ul class="detail__list__top">\
-<li class="lists__bottom"><a href="/index.html">トップ</a></li>\
+<div id="top__mutsume"><div class="top">\
+<img class="top__img" src="favicon.png" alt="むつめ祭のアイコン">\
+<div class=""><h1 class="top__top">むつめ祭</h1><h2 class="top__sub">Official Teaser Site</h2>\
+</div></div></div>\
+<li class="lists"><a href="/index.html">トップ</a></li>\
 <li class="lists"><a href="/kyosan.html">協賛のお願い</a></li>\
 <li class="lists__last"><a href="/student.html">参加団体へ</a></li>\
 <!-- <li class="lists"><a href="">テーマ発表</a></li>\

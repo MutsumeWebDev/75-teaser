@@ -1,4 +1,4 @@
-/* ワイド画面でのmenubarの画像を表示させなくする */
+/* ワイド画面でのmenubarはむつめロゴ/文字を表示しない */
 #top__mutsume{
     display: none;
 }
@@ -7,6 +7,7 @@
 }
 
 @media  screen and (max-width: 767px) {
+    /* hamburger menuのときはむつめロゴ/文字を表示 */
     #top__mutsume{
         display: block;
     }
@@ -15,9 +16,14 @@
     }
     #top__mutsume .top{
         color: white;
+        padding: 40px 0;
     }
     #top__mutsume .top__top{
         border-color: gray;
+    }
+    /* 最初の画像on文字とのmarginを調整 */
+    .detail__ttl{
+        margin-top: 10px;
     }
 
     .openbtn{

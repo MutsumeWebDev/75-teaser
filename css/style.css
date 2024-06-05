@@ -350,7 +350,7 @@ header{
     position: absolute;
     left: 0;
     right: 0;
-    top: calc(50% - min(calc(4vw), 44px));
+    top: calc(50% - min(calc(4vw), 44px) / 2);
     font-size: min(calc(4vw), 44px);
     font-weight: 400;
     letter-spacing: .1em;

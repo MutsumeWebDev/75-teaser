@@ -326,7 +326,8 @@ header{
 
 /*detail.html*/
 .detail__img{
-    height: 40px;
+    margin: auto; /* 中心にする */
+    width: 50px;
 }
 .kyosan__page section{
     margin: 0 auto;

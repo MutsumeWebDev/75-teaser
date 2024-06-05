@@ -128,24 +128,24 @@ header{
 .top{
     display: flex;
     margin: 0 auto;
-    padding: 90px 0 37px;
-    width: 224px;
+    padding: 8vw 0 40px;
+    width: 30vw;
     justify-content: space-between;
     color: rgb(89, 118, 185);
     font-family: serif;
     z-index: 74;
 }
 .top__img{
-    height: 57px;
+    height: 7.5vw;
     margin-right: 7px;
 }
 .top__top{
-    font-size: 35px;
+    font-size: 4.5vw;
     text-align: center;
     border-bottom: solid 1px rgb(136, 201, 161);
 }
 .top__sub{
-    font-size: 17px;
+    font-size: 2.25vw;
     text-align: center;
 }
 .detail__list__top{
@@ -335,20 +335,23 @@ header{
 .detail__ttl{
     position: relative;
     display: block;
-    margin-top: 3em;
+    margin: auto;
+    margin-top: min(6vw, 60px);
     text-align: center;
     background-image: url(/images/header_img.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    height:140px;
+    /* 画像サイズをレスポンシブに */
+    width: min(100vw, 960px);
+    height: min(calc(100vw * 0.22), 210px);
 }
 .detail__ttl__text{
     position: absolute;
     left: 0;
     right: 0;
-    top: calc(50% - .8em);
-    font-size: 1.6em;
+    top: calc(50% - min(calc(4vw), 44px));
+    font-size: min(calc(4vw), 44px);
     font-weight: 400;
     letter-spacing: .1em;
     color: white;

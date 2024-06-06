@@ -131,7 +131,7 @@ header{
 .top{
     display: flex;
     margin: 0 auto;
-    padding: 77px 0 37px;
+    padding: calc(3em + 37px) 0 37px;
     width: 224px;
     justify-content: space-between;
     color: rgb(89, 118, 185);
@@ -166,13 +166,13 @@ header{
     z-index: 73;
 }
 .lists{
-    font-size: calc(.5em + .9vw);
+    font-size: 1em;
     margin-right: .6em;
     padding-right: .6em;
     border-right: solid 1px #bdbebe;
 }
 .lists__last{
-    font-size: calc(.5em + .9vw);
+    font-size: 1em;
     margin-right: .6em;
     padding-right: .6em;
 }

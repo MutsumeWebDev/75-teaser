@@ -256,7 +256,6 @@ header{
     position: relative;
 }
 .mid__ttl{
-    width: 80%;
     margin: 0 auto;
     text-align: left;
     margin-bottom: 15px;
@@ -270,7 +269,9 @@ header{
 }
 
 .student{
-    margin-bottom: 100px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    width: 90%;
 }
 .student::after{
     content:'';
@@ -290,16 +291,19 @@ header{
 }
 .student__wrap{
     position: relative;
-    display: flex;
     border: solid 1px #bdbebe;
     box-shadow: 5px 5px rgb(136, 201, 161);
+}
+.student__content{
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .student__content p{
     padding: 10px 0 14px;
     font-size: .8em;
 }
 .student__img{
-    margin-right: 15px;
+    padding-bottom: 20px;
 }
 
 .contact__ttl{
@@ -554,14 +558,6 @@ footer{
     .picture{
         width: 100%;
     }
-    .student{
-        margin: 0 auto 100px;
-        width: 90%;
-    }
-    .student__wrap{
-        flex-wrap: wrap;
-        padding-top: 0px;
-    }
     .student__img{
         width: 100%;
         margin: 0;
@@ -570,7 +566,7 @@ footer{
         padding: 0 20px 20px
     }
     .mid__ttl{
-        width: 90%;
+        width: 94%;
     }
     
 }

@@ -1,6 +1,6 @@
 const detail__list__top = '<ul class="detail__list__top">\
 <div id="top__mutsume"><div class="top">\
-<img class="top__img" src="favicon.png" alt="むつめ祭のアイコン">\
+<img class="top__img" src="/images/favicon.png" alt="むつめ祭のアイコン">\
 <div class=""><h1 class="top__top">むつめ祭</h1><h2 class="top__sub">Official Teaser Site</h2>\
 </div></div></div>\
 <li class="lists"><a href="/index.html">トップ</a></li>\

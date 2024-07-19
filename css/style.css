@@ -231,6 +231,10 @@ header{
     background-color: #929090;
     color: #ffffff;
 }
+.marker__notice{
+    background-color: rgb(136, 201, 161);
+    color: #ffffff;
+}
 
 .kyosan__box{
     position: relative;
@@ -315,6 +319,14 @@ header{
 }
 .student__img{
     padding-bottom: 20px;
+}
+.song__ttl{
+    margin: 0 auto 30px;
+    width: 8em;
+    color: rgb(87, 158, 215);
+    font-size: 1.6em;
+    font-weight: 300;
+    letter-spacing: .1em;
 }
 
 .contact__ttl{

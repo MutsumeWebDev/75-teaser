@@ -483,8 +483,14 @@ header{
 }
 .kyosan__adress dd{
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     border-left: 1px solid rgb(116, 198, 190);
+}
+.kyosan__adress iframe{
+    aspect-ratio: 16/9;
+    max-width: 514px;
+    width: 60vw;
+
 }
 
 /*theme_song.html内*/

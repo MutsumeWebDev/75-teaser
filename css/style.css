@@ -71,6 +71,10 @@ dd{
     border-radius: 2px;
     background-color: rgb(136, 201, 161);
 }
+small{
+    display: block;
+    text-align: right;
+}
 .link__button__1{
     position: absolute;
     right: 0;
@@ -226,6 +230,25 @@ header{
 }
 .news__time{
     font-size: 12px;
+}
+.link__page{
+    color: blue;
+}
+.info__ttl{
+    margin-bottom: 30px;
+    padding-left: 1em;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    font-family: serif;
+    font-size: 1.3em;
+    color: rgb(89, 118, 185);
+    border-left: solid 1.5px rgb(87, 158, 215);
+}
+.info__img{
+    max-width: 750px;
+    width:94%;
+    margin:0 auto;
+    padding-bottom: 30px;
 }
 .marker{
     background-color: #929090;
@@ -556,6 +579,100 @@ footer{
     width: 30px;
 }
 
+.ticket {
+    padding: 5% 3%;
+    padding-top: 10%;
+}
+.ticket_in {
+    text-align: center;
+}
+.ticket_in .box {
+    margin:2em 0 3em;
+}
+.ticket_in .box h3 {
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: .1em;
+    text-indent: .1em;
+    background: rgb(87, 158, 215);
+    color:#fff;
+    width: 12em;
+    margin: 0 auto .5em;
+    border-radius: 5px;
+    line-height: 2;
+    margin-bottom: 1em
+}
+.ticket_in .box p {
+    margin-bottom:1em;
+    line-height: 1.6;
+}
+.ticket_in .box p:last-child {
+    margin-bottom:0 !important;
+}
+.ticket_in .box.sche b {
+    display:block;
+    font-weight:500;
+    font-size:1.05em;
+}
+
+.ticket_in .box .price {
+    line-height:1;
+    margin-top:.2em;
+}
+.ticket_in .box .price span {
+    font-weight:700;
+    font-size:2em;
+    margin-right:.2em;
+}
+
+.ticket h3.midashi {
+    font-size: 1.1em;
+    background: rgb(87, 158, 215);
+    color: #fff;
+    font-weight: 500;
+    line-height: 3;
+    display:none;
+}
+
+.ticket .v2 {
+    border: 1px solid rgb(87, 158, 215);
+    margin: 1em 0 2em;
+    background: #fff;
+    border-radius: 15px;
+    padding-bottom: 3em;
+}
+.ticket .v2 h3.midashi {
+    display: block;
+    border-radius: 14px 14px 0 0;
+    font-size: 1.2em;
+}
+.ticket .v2 .box {
+    padding: 2em 0;
+    border-bottom: 1px dashed #abd6dc;
+    margin: 0 5%;}
+.ticket .v2 .btn_wrap {
+    margin: 2em auto 0;
+    padding:0;
+}
+.ticket .v2 .box h3 {
+    border: 1px solid rgb(87, 158, 215);
+    background:#fff;
+    color:rgb(87, 158, 215);
+}
+@media screen and (min-width:768px) {
+    .ticket {padding: 70px 3% 20px;}
+    .ticket .stream .box {padding: 1.9em;margin: 2em 0 3.5em;border: 2px dashed #00c9e6;}
+    .ticket .stream .box h3 {margin-top: -3em;}
+
+    .ticket .v2 {border: 2px solid #00c9e6;}
+    .ticket .v2 h3.midashi {border-radius: 13px 13px 0 0;}
+}
+@media screen and (max-height:767px) and (max-width:380px) {
+    .ticket_in .box.sche p {margin:0;}
+    .ticket_in .box.sche b {display: inline-block;vertical-align: middle;}
+    .ticket_in.v2 .box.sche p {margin-bottom:1em;}
+    .ticket_in.v2 .box.sche b {display: block;}
+    }
 @media screen and (max-width:430px) {
     body {
         font-size:3.5vw;
